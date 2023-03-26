@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/RealViews/Modificaciones/modificaciones.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <h3 class="navTitle">Modulos</h3>
+        <ul class="list">
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/dashboard.svg" >
+                    <a href="/RealViews/Dashboard/dashboard.html" class="NavLink">Dashboard</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/users.svg">
+                    <a href="/RealViews/Usuarios/usuarios.html" class="NavLink">Usuarios</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/vehicles.svg">
+                    <a href="/RealViews/vehiculos/vehiculos.html" class="NavLink">Vehiculos</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/buys.svg">
+                    <a href="/RealViews/Compras/compras.html" class="NavLink">Compras</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/vendedores.svg">
+                    <a href="/RealViews/Vendedores/vendedores.html" class="NavLink">Vendedores</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/ventas.svg">
+                    <a href="/RealViews/Ventas/ventas.html" class="NavLink">Ventas</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/compradores.svg">
+                    <a href="/RealViews/Compradores/compadores.html" class="NavLink">Compradores</a>
+                </div>
+            </li>
+
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/modifications.svg">
+                    <a href="/RealViews/Modificaciones/modificaciones.html" class="NavLink">Modificaciones</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div>
+            <img src="../assets/userLogin.svg" alt="">
+            <a href=""></a>
+        </div>
+
+        <div>
+            <img src="../assets/notification.svg" alt="">
+            <a href=""></a>
+        </div>
+    </nav>
+
+    <div class="headerContainer">
+        <div class="headerTittle">
+            <h1> Modulo - Modificaciones </h1>
+        </div>
+
+        <div class="headerDates">
+            <p> 12:45 a.m </p>
+            <p> Marzo, 03 de 2023 </p>
+        </div>
+
+        <span class="line"></span>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <div class="searchImg">
+                <a href="/assets/search.svg"></a>
+            </div>
+            <button class="buttonSearch"> Registrar Modificación</button>
+        </div>
+    </div>
+
+    <div class="card">    
+        <div class="cardTittle"> 
+            <p>Placa del vehiculo:</p>
+            <p> STP765</p>
+        </div>
+        <div class="cardContent">
+            <div>
+                <form action="" class="formX">
+                    <label for="" class="firstLabel"> Ultima actualzación</label>
+                    <label for="" class="secondLabel"> 11/05/2024</label>
+                </form>
+            </div>
+            <div>
+                <form action="">
+                    <label for="" class="firstLabel"> Total Invertido </label>
+                    <label for="" class="secondLabel"> $150.000 </label> 
+                </form>
+            </div>
+
+            <div class="buttons"> 
+                <button class="buttonView"><img src="/RealViews/assets/ver.svg" alt=""></button>
+                <button class="buttonEdit"><img src="/RealViews/assets/editar.svg" alt=""></button>
+                <button class="button"><img src="/RealViews/assets/estado.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="modal modal-show">
+        <div class="oneform">
+            <h2 class="form_tittle">NUEVO REGISTRO DE MODIFICACIÓN</h2>
+            <p class="modalClose">SALIR</p>
+            <form class="form">
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="placadelvehiculo" class="form_input" placeholder=" " >
+                            <label for="placadelvehiculo" class="form_label">Placa del vehículo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="date" id="fecha" class="form_input" placeholder=" ">
+                            <label for="fecha" class="form_label">Fecha</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <div class="form_contenedor1">
+                                <p class="tittlemod">Tipo modificación</p>
+                                <input type="submit" class="selec" value="Seleccionar">
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <div class="form_contenedor1">
+                                <input type="number" id="costo" class="form_input" placeholder=" " >
+                                <label for="costo" class="form_label">Costo</label>
+                                <span class="form_line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_contenedor2">   
+                        <div class="form_group2">
+                            <input type="text" id="descripcion" class="form_input" placeholder=" ">
+                            <label for="descripcion" class="form_label">Descripción de modificación</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Registrar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div>       
+    </section>
+    <section class="modalView modalView-show">
+        <div class="viewModificationContainer">
+            <div class="viewModificationTittle">
+                <h3>INFOMACIÓN DE MODIFICACIONES</h3>
+                <p class="modalViewClose">SALIR</p>
+            </div>
+            
+            <div class="Placa">
+                <p>PLACA</p>
+                <p class="PlacaInput"></p>
+            </div>
+            <div class="TotalInvertido">
+                <p>Total invertido</p>
+                <p class="TotalInput"></p>
+            </div>
+    
+    
+            <div class="ContainerInfo">
+                <div >
+                    <p class="date">Marzo 17, 2022</p>
+                    <p class="descripcion">Descripcion de la modificacion</p>
+                    <p class="input1"></p>
+                </div>
+                <div >
+                    <p class="costo">Costo</p>
+                    <p class="input2"></p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <section class="modalEdit modalEdit-show">
+        <div class="oneform">
+            <h2 class="form_tittle">EDITAR INFORMACIÓN</h2>
+            <p class="modalEditClose">SALIR</p>
+            <form class="form">
+                <h2 class="form_tittle2">PLACA XXX-XXX</h2>
+                <div class="form_contenedor2">
+                    <div class="form_group2">
+                        <input type="date" id="fechamodi" class="form_input" placeholder=" " >
+                        <label for="fechamodi" class="form_label">Fecha</label>
+                        <span class="form_line"></span>
+                    </div>
+                </div> 
+                <div class="form_contenedor">
+                    <div class="form_group3">
+                        <input type="text" id="descripcion" class="form_input" placeholder=" ">
+                        <label for="descripcion" class="form_label">Descripción de modificación</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group2">
+                        <input type="number" id="costo" class="form_input" placeholder=" " >
+                        <label for="costo" class="form_label">Costo</label>
+                        <span class="form_line"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="form_contenedor2">
+                    <div class="form_group2">
+                        <input type="date" id="fechamodi" class="form_input" placeholder=" " >
+                        <label for="fechamodi" class="form_label">Fecha</label>
+                        <span class="form_line"></span>
+                    </div>
+                </div> 
+                <div class="form_contenedor">
+                    <div class="form_group3">
+                        <input type="text" id="descripcion" class="form_input" placeholder=" ">
+                        <label for="descripcion" class="form_label">Descripción de modificación</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group2">
+                        <input type="number" id="costo" class="form_input" placeholder=" " >
+                        <label for="costo" class="form_label">Costo</label>
+                        <span class="form_line"></span>
+                    </div>
+                </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Actualizar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div> 
+
+
+    </section>
+
+    <script src="/RealViews/js/Anothers.js"></script>
+</body>
+</html>

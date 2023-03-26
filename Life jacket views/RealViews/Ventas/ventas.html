@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/RealViews/Compras/compras.css">
+    <title>Ventas</title>
+</head>
+<body>
+    <nav class="nav">
+        <h3 class="navTitle">Modulos</h3>
+        <ul class="list">
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/dashboard.svg" >
+                    <a href="/RealViews/Dashboard/dashboard.html" class="NavLink">Dashboard</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/users.svg">
+                    <a href="/RealViews/Usuarios/usuarios.html" class="NavLink">Usuarios</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/vehicles.svg">
+                    <a href="/RealViews/vehiculos/vehiculos.html" class="NavLink">Vehiculos</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/buys.svg">
+                    <a href="/RealViews/Compras/compras.html" class="NavLink">Compras</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/vendedores.svg">
+                    <a href="/RealViews/Vendedores/vendedores.html" class="NavLink">Vendedores</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/ventas.svg">
+                    <a href="/RealViews/Ventas/ventas.html" class="NavLink">Ventas</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/compradores.svg">
+                    <a href="/RealViews/Compradores/compadores.html" class="NavLink">Compradores</a>
+                </div>
+            </li>
+
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/modifications.svg">
+                    <a href="/RealViews/Modificaciones/modificaciones.html" class="NavLink">Modificaciones</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div>
+            <img src="../assets/userLogin.svg" alt="">
+            <a href=""></a>
+        </div>
+
+        <div>
+            <img src="../assets/notification.svg" alt="">
+            <a href=""></a>
+        </div>
+    </nav>
+
+    <div class="headerContainer">
+        <div class="headerTittle">
+            <h1> Modulo - Ventas </h1>
+        </div>
+
+        <div class="headerDates">
+            <p> 12:45 a.m </p>
+            <p> Marzo, 03 de 2023 </p>
+        </div>
+
+        <span class="line"></span>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <div class="searchImg">
+                <a href="/assets/search.svg"></a>
+            </div>
+            <button class="buttonSearch"> Registrar venta</button>
+        </div>
+    </div>
+
+    <div class="cardContainer">
+        <div class="cardContent">
+            <div class="cardTittle"> 
+                <p>ID VENTA: </p>
+                <p>393784hgixccv</p>
+            </div>
+            <div class="cardBody">
+                <div class="cardDates">
+                    <label for="" class="text">Placa</label>
+                    <input type="text" class="label" value="MMM-999">
+                </div>
+                <div class="cardDates">
+                    <label for="" class="text">Fecha</label>
+                    <input type="text" class="label" value="10-20-2022">    
+                </div>
+                <div class="cardDates">
+                    <label for="" class="text">Precio venta</label>
+                    <input type="text" class="label" value="$10.000.000">   
+                </div>
+            </div>
+            <div class="buttons"> 
+                <button class="buttonView"><img src="/RealViews/assets/ver.svg" alt=""></button>
+                <button class="buttonEdit"><img src="/RealViews/assets/editar.svg" alt=""></button>
+                <button class="button"><img src="/RealViews/assets/estado.svg" alt=""></button>
+            </div>
+        </div>       
+    </div>
+
+    <section class="modal modal-show">
+        <div class="oneform">
+            <h2 class="form_tittle">NUEVO REGISTRO DE VENTA</h2>
+            <p class="modalClose">SALIR</p>
+            <form class="form">
+                <div class="form_contenedor1">
+                    <h2 class="form_tittle2">Datos del comprador</h2>
+                    <input type="submit" class="selec" value="Seleccionar">
+                </div>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_input" placeholder=" " >
+                            <label for="name" class="form_label">Nombres</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="lastname" class="form_input" placeholder=" ">
+                            <label for="lastname" class="form_label">Apellidos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="cc" class="form_input" placeholder=" " >
+                            <label for="cc" class="form_label">Cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="expedicion" class="form_input" placeholder=" ">
+                            <label for="expedicion" class="form_label">Lugar de expedición</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="phonenumber" class="form_input" placeholder=" " >
+                            <label for="phonenumber" class="form_label">Teléfono</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="address" class="form_input" placeholder=" ">
+                            <label for="address" class="form_label">Dirección</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>     
+            </form>
+            <br>
+            <form class="form">
+                <div class="form_contenedor1">
+                    <h2 class="form_tittle2">Datos del vendedor</h2>
+                    <input type="submit" class="selec" value="Seleccionar">
+                </div>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_input" placeholder=" " >
+                            <label for="name" class="form_label">Nombres</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="lastname" class="form_input" placeholder=" ">
+                            <label for="lastname" class="form_label">Apellidos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="cc" class="form_input" placeholder=" " >
+                            <label for="cc" class="form_label">Cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="expedicion" class="form_input" placeholder=" ">
+                            <label for="expedicion" class="form_label">Lugar de expedición</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="phonenumber" class="form_input" placeholder=" " >
+                            <label for="phonenumber" class="form_label">Teléfono</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="address" class="form_input" placeholder=" ">
+                            <label for="address" class="form_label">Dirección</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>     
+            </form>
+            <br>
+            <form class="form">
+                <div class="form_contenedor1">
+                    <h2 class="form_tittle2">Datos del vehículo</h2>
+                    <input type="submit" class="selec" value="Seleccionar">
+                </div>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="vehiculo" class="form_input" placeholder=" " >
+                            <label for="vehiculo" class="form_label">Vehículo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="marca" class="form_input" placeholder=" ">
+                            <label for="marca" class="form_label">Marca</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="modelo" class="form_input" placeholder=" " >
+                            <label for="modelo" class="form_label">Modelo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="capacidad" class="form_input" placeholder=" ">
+                            <label for="capacidad" class="form_label">Capacidad</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="tipo" class="form_input" placeholder=" " >
+                            <label for="tipo" class="form_label">Tipo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="color" class="form_input" placeholder=" ">
+                            <label for="color" class="form_label">Color</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="servicio" class="form_input" placeholder=" " >
+                            <label for="servicio" class="form_label">Servicio</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="linea" class="form_input" placeholder=" ">
+                            <label for="linea" class="form_label">Linea</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="motor" class="form_input" placeholder=" " >
+                            <label for="motor" class="form_label">Motor</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="chasis" class="form_input" placeholder=" ">
+                            <label for="chasis" class="form_label">Chasís</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="serie" class="form_input" placeholder=" " >
+                            <label for="serie" class="form_label">Serie</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="placa" class="form_input" placeholder=" ">
+                            <label for="placa" class="form_label">Placa</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="empresa" class="form_input" placeholder=" " >
+                            <label for="empresa" class="form_label">Empresa</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="matriculaanombrede" class="form_input" placeholder=" ">
+                            <label for="matriculaanombrede" class="form_label">Matricula a nombre de</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="numerodecedula" class="form_input" placeholder=" " >
+                            <label for="numerodecedula" class="form_label">Número de cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="kilometraje" class="form_input" placeholder=" ">
+                            <label for="kilometraje" class="form_label">Kilometraje</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="cilindraje" class="form_input" placeholder=" " >
+                            <label for="cilindraje" class="form_label">Cilindraje</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="combustible" class="form_input" placeholder=" ">
+                            <label for="combustible" class="form_label">Combustible</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="traccion" class="form_input" placeholder=" " >
+                            <label for="traccion" class="form_label">Tracción</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="soat" class="form_input" placeholder=" ">
+                            <label for="soat" class="form_label">Soat</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>  
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="tecnomecanica" class="form_input" placeholder=" " >
+                            <label for="tecnomecanica" class="form_label">Tecnomecánica</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="correadentada" class="form_input" placeholder=" ">
+                            <label for="correadentada" class="form_label">Correa dentada</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor2">   
+                        <div class="form_group">
+                            <p>Añadir imagen</p>
+                            <br>
+                            <input type="file" name="imagen" class="form_imagen"/>
+                        </div>
+                    </div>
+            </form>
+            <br>
+            <form class="form">
+                <h2 class="form_tittle2">Más información</h2>
+                    <div class="form_contenedor2">
+                        <div class="form_group2">
+                            <input type="date" id="fechacompra" class="form_input" placeholder=" " >
+                            <label for="fechacompra" class="form_label">Fecha compra realizada</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor3">
+                        <div class="form_group">
+                            <input type="number" id="precioconvenido" class="form_input" placeholder=" " >
+                            <label for="precioconvenido" class="form_label">Precio convenido para la venta</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="mediodepago" class="form_input" placeholder=" ">
+                            <label for="mediodepago" class="form_label">Medio de pago</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="limitaciones" class="form_input" placeholder=" " >
+                            <label for="limitaciones" class="form_label">Limitaciones</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="ciudad" class="form_input" placeholder=" ">
+                            <label for="ciudad" class="form_label">Ciudad</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="sancion" class="form_input" placeholder=" ">
+                            <label for="sancion" class="form_label">Sanción pecuniaria en pesos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>  
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Registrar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div> 
+    </section>
+    <section class="modalView modalView-show">
+        <div class="container">
+            <div class="screen">
+                <div class="tittle">
+                    <p> INFORMACION DE LA VENTA </p>
+                    <p class="modalViewClose">SALIR</p>
+                </div>
+                    <div class="fecha">
+                        <p>Marzo 17,2023</p>
+                        <div class="IdCompra">
+                            <label for="">ID Compra</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                <div class="containerInfo">   
+                    <div class="info">
+                        <label for="">Placa vehiculo</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="info">
+                        <label for="">Precio venta</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="info">
+                        <label for="">Metodo de pago</label>
+                        <input type="text">
+                    </div>
+                </div> 
+                
+                <div class="containerInfoLarge">
+                    <div class="infoLarge">
+                        <label for="">Nombre comprador</label>
+                        <input type="text" class="inputMajor">
+                    </div>
+    
+                    <div class="infoLarge">
+                        <label for="">Nombre vendedor</label>
+                        <input type="text">
+                    </div>
+                </div>
+                
+                <div class="containerInfo">
+                    <div class="info">
+                        <label for="">Limitaciones</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="info">
+                        <label for="">Ciudad</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="info">
+                        <label for="">Sanción pecunaria en pesos</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modalEdit modalEdit-show">
+        <div class="oneform">
+            <h2 class="form_tittle">EDITAR INFORMACIÓN</h2>
+            <p class="modalEditClose">SALIR</p>
+            <form class="form">
+                <h2 class="form_tittle2">Datos de la venta</h2>
+                    <div class="form_contenedor2">
+                        <div class="form_group2">
+                            <input type="date" id="fechacompra" class="form_input" placeholder=" " >
+                            <label for="fechacompra" class="form_label">Fecha venta realizada</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div> 
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="placa" class="form_input" placeholder=" ">
+                            <label for="placa" class="form_label">Placa vehículo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="number" id="precioconvenido" class="form_input" placeholder=" " >
+                            <label for="precioconvenido" class="form_label">Precio venta</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="mediodepago" class="form_input" placeholder=" ">
+                            <label for="mediodepago" class="form_label">Metodo de pago</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor1">   
+                        <div class="form_group3">
+                            <input type="text" id="namecom" class="form_input" placeholder=" ">
+                            <label for="namecom" class="form_label">Nombre comprador</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group3">
+                            <input type="text" id="nameven" class="form_input" placeholder=" ">
+                            <label for="nameven" class="form_label">Nombre vendedor</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="limitaciones" class="form_input" placeholder=" " >
+                            <label for="limitaciones" class="form_label">Limitaciones</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="ciudad" class="form_input" placeholder=" ">
+                            <label for="ciudad" class="form_label">Ciudad</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="sancion" class="form_input" placeholder=" ">
+                            <label for="sancion" class="form_label">Sanción pecuniaria en pesos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Actualizar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div> 
+    </section>
+
+    <script src="/RealViews/js/Anothers.js"></script>
+
+    <script src="/RealViews/js/Anothers.js"></script>
+</body>
+</html>

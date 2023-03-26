@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Jost:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Jost:wght@300;400&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #E2E4E6;  
+}
+                                /* ****Barrra de navegacion**** */
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 270px;
+    height: 93vh;
+    background: #0D0628;
+    border-radius: 20px;
+    margin: 5px;
+    position: fixed;
+}
+
+.navTitle{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 25;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+}
+.NavLink{
+    color: #FFFFFF;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+
+.list{
+    width: 100%;
+    height: 100hv;
+}
+
+.listItem{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.listItem:hover{
+    margin-left: 7px;
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    width: 94%;
+    border-radius: 8px;
+}
+.listButton{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+                    /* ****Titulo**** */
+
+.headerContainer{
+    display: flex;
+    position: relative;
+    left: 15%;
+    width: 80%;
+    margin: 1%;
+    bottom: unset;
+}
+
+.headerTittle{
+    display: flex;
+    font-size: 30px;
+    width: 70%;
+    font-weight: 900;
+}
+
+.headerTittle h1{
+    font-weight: 900;
+}
+
+.headerDates{
+    position: relative;
+    left: 13%;
+    top: 30px;
+    height: 200px;
+    width: 300px;
+    font-size: 18px;
+}
+
+.line{
+    display: flex;
+    top: 150px;
+    width: 95%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+}
+
+                    /* ***Botones de Busqueda*** */
+
+.buttonsContainer{
+    display: flex;
+    position: relative;       
+    left: 81%;
+    top: -10vh;
+    width: 80%;
+    height: 200px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+
+.search input{
+    width: 0px;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid #3DD6CC;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.searchImg{
+    position: relative;
+    right: 40px;
+    width: 48px;
+    height: 48px;
+    line-height: 55px;
+    background: -webkit-linear-gradient(#E1E1E1,#F5F5F5);
+    border-radius: 30%;
+    border: 1px solid #3DD6CC;
+    cursor: pointer;
+}
+
+.buttonSearch{
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    border-radius: 20px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonSearch:hover{
+    color: #3DD6CC;
+    background: #FFF;
+    border: #3DD6CC 3px solid;
+}
+
+/* .search:hover input {
+    width: 200px;
+} */
+
+.search input:focus {
+    width: 200px;
+}
+
+                            /* ***Carta Vehiculo*** */
+.container{
+    display: flex;
+    width: 100%;
+}
+.card {
+    width: 30%;
+    height: 280px;
+    margin-right: 0;
+    position: relative;
+    top: -180px;
+    left: 15%;
+    background-color: #FFFF;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    margin: 25px;
+    background-color: #FFF;
+}
+
+.card img{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+.cardTittle{
+    background: -webkit-linear-gradient(#252525,#0D0628);
+    width: 95%;
+    height: 20%;
+    position: absolute;
+    border-radius: 2px;
+    color: #FFFF;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.cardTittle p{
+    padding-left: 10%;
+}
+
+.cardContent {
+    display: flex;
+    margin: 5%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px; 
+}
+
+
+.cardContent form{
+    display: flex;
+    align-items: center;
+}
+
+.firstLabel{
+    padding-left: 7%;
+    padding-bottom: 3%;
+    width: 50%;
+    flex-direction: column;    
+}
+
+.secondLabel{
+    border-radius: 8px;
+    border: 2px solid #CCD2F0;
+    padding: 5px;
+    width: 180px;
+    height: 25px;
+    margin: 10px;
+}
+
+.buttons{
+    position: relative;
+    top: 50px;
+    right: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button , .buttonView, .buttonEdit{
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    border-radius: 8px;
+    border: none;
+    color: #FFFF;
+    margin: 5px;
+    width: 50px;
+    height: 23px;
+    cursor:pointer;
+}
+
+.button:hover{
+    border: #3DD6CC 3px solid ;
+    background: #FFF;
+}
+
+.oneform{
+    background-color: #E0E0E0;
+    margin: auto;
+    max-width: 900px;
+    padding: 24px 270px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 70%);
+}
+
+
+.form{
+    background-color: #fff;
+    padding: 4em 3em;
+    width: 800px;
+    margin-left: -220px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 70%);
+    text-align: center;       
+    margin-bottom: 30px; 
+}
+
+.form_tittle{
+    margin: 20px;
+    font-size: 18px;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.form_tittle2{
+    margin: 3px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.form_contenedor{
+    margin-top: 3em;
+    margin-left: 5em;
+    display: flex;
+    gap: 2em;
+}
+
+.form_contenedor2{
+    margin-top: 3em;
+    gap: 2.5em;
+    text-align: center;
+}
+
+
+.form_group{
+    position: relative;
+    color: #000;
+    flex-direction: column;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #000;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(color);
+    font-family: 'Roboto', sans-serif;
+    width: 260px;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #000;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;    
+   
+}
+
+.form_submit{
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+   
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 1px;
+    background-color: #000;
+}
+
+.form_imagen{
+    padding: 4px;
+}
+
+.submitContainer{
+    position: relative;
+}
+
+.confirm{
+    background: -webkit-linear-gradient(#6EBF85,#50845F);
+    border: none;
+    color: #fff;
+    margin-right: 15%;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 15px;   
+}
+
+.cancel{
+    background: -webkit-linear-gradient(#BC4A4A,#782E2E);
+    border: none;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.confirm:hover{
+    background: #fff;
+    border: #6EBF85 3px solid;
+    color: #6EBF85;
+    cursor: pointer;
+}
+
+.cancel:hover{
+    background: #fff;
+    border: #BC4A4A 3px solid;
+    color: #BC4A4A;
+    cursor: pointer;
+}
+
+.viewCardContainer{
+    position: relative;
+    left: 40vh;
+    top: 10vh;
+}
+.viewCardTittle{
+    background: -webkit-linear-gradient(#252525,#0D0628);
+    color: #fff;
+    position: relative;
+    left:30px ;
+    top: -15px;
+    border-radius: 10px;
+    width: 93%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.viewCardImg{
+    display: flex;
+}
+
+.viewCardImg img{
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.viewCarLine{
+    position: absolute;
+    background: #000;
+    height: 5px;
+    width: 1000px;
+    margin: 5px;
+    left: 30px;
+}
+
+.viewCardWindow{
+    font-size: 20px;
+    background: #fff;
+    width: 56%;
+    height: 1000px;
+    border-radius: 15px;
+}
+
+.viewCardInformation{
+    display: flex;
+    justify-content: center;
+}
+
+.viewDatesCar{
+    border: #CCD2F0 2px solid ;
+    width: 110%;
+    height: 28px;
+    border-radius: 15px;
+}
+
+.leftRow{
+    position: relative;
+    left: -100px;
+}
+
+.rightRow{
+    position: relative;
+    left: 100px;
+}
+
+.modal , .modalEdit , .modalView{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show, .modalView--show , .modalEdit--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Jost:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Jost:wght@300;400&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: #E2E4E6;
+    font-family: 'Inter', sans-serif; 
+
+}
+.loginContainer{
+    position: relative;
+    right: 130px;
+    display: flex;
+    margin: auto;
+    margin-top: 160px;
+    margin-left: 50vh;
+    background: #fff;
+    width: 1300px;
+    height: 600px;
+}
+
+.datesContainer{
+    margin: auto;
+    
+}
+
+
+.tittleLogin{
+    margin-left: 25px;
+    
+}
+
+.tittleLogin h2{
+    font-size: 40px;
+    color:  -webkit-linear-gradient(#000000,#3C5586);
+}
+
+.form_group{
+    position: relative;
+    color: #000;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #000;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(color);
+    font-family: 'Roboto', sans-serif;
+    width: 260px;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #000;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;    
+   
+}
+
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 2px;
+    background-color: #000;
+}
+
+
+.imgContainer img{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    top: 50px;
+    right: 50px;
+}
+
+
+.linkLogin{
+    position: relative;
+    top: 30px;
+    left: 90px;
+    text-decoration: none;
+}
+
+.linkLoginP{
+    margin-left:30px;
+}
+.submitsLogin{
+    position: relative;
+    top: 5vh;
+}
+
+.submitLogin{
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    border: none;
+    color: #fff;
+    width: 60%;
+    height: 4vh;
+    border-radius: 18px;
+}

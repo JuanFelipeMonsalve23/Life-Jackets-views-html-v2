@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/RealViews/Compras/compras.css">
+    <title>Vendedores</title>
+</head>
+<body>
+    <nav class="nav">
+        <h3 class="navTitle">Modulos</h3>
+        <ul class="list">
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/dashboard.svg" >
+                    <a href="/RealViews/Dashboard/dashboard.html" class="NavLink">Dashboard</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/users.svg">
+                    <a href="/RealViews/Usuarios/usuarios.html" class="NavLink">Usuarios</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/vehicles.svg">
+                    <a href="/RealViews/vehiculos/vehiculos.html" class="NavLink">Vehiculos</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/buys.svg">
+                    <a href="/RealViews/Compras/compras.html" class="NavLink">Compras</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/vendedores.svg">
+                    <a href="/RealViews/Vendedores/vendedores.html" class="NavLink">Vendedores</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/ventas.svg">
+                    <a href="/RealViews/Ventas/ventas.html" class="NavLink">Ventas</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/compradores.svg">
+                    <a href="/RealViews/Compradores/compadores.html" class="NavLink">Compradores</a>
+                </div>
+            </li>
+
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/modifications.svg">
+                    <a href="/RealViews/Modificaciones/modificaciones.html" class="NavLink">Modificaciones</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div>
+            <img src="../assets/userLogin.svg" alt="">
+            <a href=""></a>
+        </div>
+
+        <div>
+            <img src="../assets/notification.svg" alt="">
+            <a href=""></a>
+        </div>
+    </nav>
+
+    <div class="headerContainer">
+        <div class="headerTittle">
+            <h1> Modulo - Vendedores </h1>
+        </div>
+
+        <div class="headerDates">
+            <p> 12:45 a.m </p>
+            <p> Marzo, 03 de 2023 </p>
+        </div>
+
+        <span class="line"></span>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <div class="searchImg">
+                <a href="/assets/search.svg"></a>
+            </div>
+            <button class="buttonSearch"> Registrar vendedor</button>
+        </div>
+    </div>
+
+    <div class="cardContainer">
+        <div class="cardContent">
+            <div class="cardTittle"> 
+                <p>CEDULA: </p>
+                <p>5678432</p>
+            </div>
+            <div class="cardBody">
+                <div class="cardDates">
+                    <label for="" class="text">Nombre</label>
+                    <input type="text" class="label" value="Alfredo">
+                </div>
+                <div class="cardDates">
+                    <label for="" class="text">Apellido</label>
+                    <input type="text" class="label" value="Solsitego">    
+                </div>
+                <div class="cardDates">
+                    <label for="" class="text">Telefono</label>
+                    <input type="text" class="label" value="30005678865">   
+                </div>
+            </div>
+            <div class="buttons"> 
+                <button class="buttonView"><img src="/RealViews/assets/ver.svg" alt=""></button>
+                <button class="buttonEdit"><img src="/RealViews/assets/editar.svg" alt=""></button>
+                <button class="button"><img src="/RealViews/assets/estado.svg" alt=""></button>
+            </div>
+        </div>       
+    </div>
+    
+    <section class="modal modal-show">
+        <div class="oneform">
+            <h2 class="form_tittle">NUEVO REGISTRO DE VENDEDOR</h2>
+            <p class="modalClose">SALIR</p>
+            <form class="form">
+                <h2 class="form_tittle2">Datos del vendedor</h2>
+                
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_input" placeholder=" " >
+                            <label for="name" class="form_label">Nombres</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="lastname" class="form_input" placeholder=" ">
+                            <label for="lastname" class="form_label">Apellidos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="cc" class="form_input" placeholder=" " >
+                            <label for="cc" class="form_label">Cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="expedicion" class="form_input" placeholder=" ">
+                            <label for="expedicion" class="form_label">Lugar de expedición</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="phonenumber" class="form_input" placeholder=" " >
+                            <label for="phonenumber" class="form_label">Teléfono</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="address" class="form_input" placeholder=" ">
+                            <label for="address" class="form_label">Dirección</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div> 
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Registrar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div>
+    </section>
+    <section class="modalView modalView-show">
+        <div class="container">
+            <div class="titleSeller">
+                <p>INFORMACIÓN DEL VENDEDOR</p>
+                <p class="modalViewClose">SALIR</p>
+            </div>
+            <div class="windowSeller">
+                <div class="leftRowSeller">
+                    <p> Nombres </p>
+                    <p class="containerDatesSeller"></p>
+    
+                    <p> Cédula</p>
+                    <p class="containerDatesSeller"></p>
+    
+                    <p> Teléfono</p>
+                    <p class="containerDatesSeller"></p>
+                </div>
+                <div class="rightRowSeller">
+                    <p> Apellidos</p>
+                    <p class="containerDatesSeller"></p>
+    
+                    <p>Lugar de expedición</p>
+                    <p class="containerDatesSeller"></p>
+    
+                    <p> Dirección</p>
+                    <p class="containerDatesSeller"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modalEdit modalEdit-show">
+        <div class="oneform">
+            <h2 class="form_tittle">EDITAR INFORMACIÓN</h2>
+            <p class="modalEditClose">SALIR</p>
+            <form class="form">
+                <h2 class="form_tittle2">Datos del vendedor</h2>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_input" placeholder=" " >
+                            <label for="name" class="form_label">Nombres</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="lastname" class="form_input" placeholder=" ">
+                            <label for="lastname" class="form_label">Apellidos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="cc" class="form_input" placeholder=" " >
+                            <label for="cc" class="form_label">Cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="expedicion" class="form_input" placeholder=" ">
+                            <label for="expedicion" class="form_label">Lugar de expedición</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="phonenumber" class="form_input" placeholder=" " >
+                            <label for="phonenumber" class="form_label">Teléfono</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="address" class="form_input" placeholder=" ">
+                            <label for="address" class="form_label">Dirección</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div> 
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Actualizar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div>
+    </section>
+
+    <script src="/RealViews/js/Anothers.js"></script>
+</body>
+</html>

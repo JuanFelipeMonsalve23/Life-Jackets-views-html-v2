@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Jost:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Jost:wght@300;400&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: #E2E4E6; 
+}
+
+                                /* ****Barrra de navegacion**** */
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 270px;
+    height: 93vh;
+    background: #0D0628;
+    border-radius: 20px;
+    margin: 5px;
+    position: fixed;
+}
+
+.navTitle{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 25;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+}
+.NavLink{
+    color: #FFFFFF;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+
+.list{
+    width: 100%;
+    height: 100hv;
+}
+
+.listItem{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.listItem:hover{
+    margin-left: 7px;
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    width: 94%;
+    border-radius: 8px;
+}
+.listButton{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+                    /* ****Titulo**** */
+
+.headerContainer{
+    display: flex;
+    position: relative;
+    left: 15%;
+    width: 80%;
+    margin: 1%;
+    bottom: unset;
+    color: #252525;
+}
+
+.headerTittle{
+    display: flex;
+    font-size: 30px;
+    width: 70%;
+    font-weight: 900;
+}
+
+.headerTittle h1{
+    font-weight: 900;
+}
+
+.headerDates{
+    position: relative;
+    left: 13%;
+    top: 30px;
+    height: 200px;
+    width: 300px;
+    font-size: 18px;
+}
+
+.line{
+    display: flex;
+    top: 150px;
+    width: 95%;
+    height: 10px;
+    background-color: #252525;;
+    position: absolute;
+}
+
+                    /* ***Botones de Busqueda*** */
+
+.buttonsContainer{
+    display: flex;
+    position: relative;       
+    left: 81%;
+    top: -10vh;
+    width: 80%;
+    height: 200px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+
+.search input{
+    width: 0px;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid #3DD6CC;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.searchImg{
+    position: relative;
+    right: 40px;
+    width: 48px;
+    height: 48px;
+    line-height: 55px;
+    background: -webkit-linear-gradient(#E1E1E1,#F5F5F5);
+    border-radius: 30%;
+    border: 1px solid #3DD6CC;
+    cursor: pointer;
+}
+
+.buttonSearch{
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    border-radius: 20px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonSearch:hover{
+    color: #3DD6CC;
+    background: #FFF;
+    border: #3DD6CC 3px solid;
+}
+
+.search:hover input {
+    width: 200px;
+}
+
+.search input:focus {
+    width: 200px;
+}
+
+
+                        /* ***Estadisticas*** */
+.staticsContainer{
+    display: flex;
+    position: relative;
+    left: 31vh;
+    top: 40px;
+    width: 143vh;
+    max-height: max-content;
+}
+
+.staticsCard{
+    background: #FFF;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.staticsWindow input{ 
+    background: -webkit-linear-gradient(#3DD6CC,#3C5586);
+    position: relative;
+    width: 40vh;
+    height: 200px;
+    left: 45px;
+    top: -50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.staticsWindow p{
+    position: relative;
+    left: 13vh;
+    top: -50px;
+}

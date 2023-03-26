@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/RealViews/Usuarios/usuarios.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <nav class="nav">
+        <h3 class="navTitle">Modulos</h3>
+        <ul class="list">
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/dashboard.svg" >
+                    <a href="/RealViews/Dashboard/dashboard.html" class="NavLink">Dashboard</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/users.svg">
+                    <a href="/RealViews/Usuarios/usuarios.html" class="NavLink">Usuarios</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/vehicles.svg">
+                    <a href="/RealViews/vehiculos/vehiculos.html" class="NavLink">Vehiculos</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/buys.svg">
+                    <a href="/RealViews/Compras/compras.html" class="NavLink">Compras</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/vendedores.svg">
+                    <a href="/RealViews/Vendedores/vendedores.html" class="NavLink">Vendedores</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/ventas.svg">
+                    <a href="/RealViews/Ventas/ventas.html" class="NavLink">Ventas</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/compradores.svg">
+                    <a href="/RealViews/Compradores/compadores.html" class="NavLink">Compradores</a>
+                </div>
+            </li>
+
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/modifications.svg">
+                    <a href="/RealViews/Modificaciones/modificaciones.html" class="NavLink">Modificaciones</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div>
+            <img src="../assets/userLogin.svg" alt="">
+            <a href=""></a>
+        </div>
+
+        <div>
+            <img src="../assets/notification.svg" alt="">
+            <a href=""></a>
+        </div>
+    </nav>
+
+    <div class="headerContainer">
+        <div class="headerTittle">
+            <h1> Modulo - Usuarios </h1>
+        </div>
+
+        <div class="headerDates">
+            <p> 12:45 a.m </p>
+            <p> Marzo, 03 de 2023 </p>
+        </div>
+
+        <span class="line"></span>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <div class="searchImg">
+                <a href="/assets/search.svg"></a>
+            </div>
+            <button class="buttonSearch1"> Crear Rol</button>
+            <button class="buttonSearch2" id="addUser"> Registrar Usuario</button>
+        </div>
+    </div>
+
+    <div class="containerRoles">
+        <div class="tittle">
+            <h2> Roles creados </h2>
+        </div>
+        <div class="roles">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </div>
+        <span class="lineTwo"></span>
+    </div>
+
+    <div class="UsuariosCreados">
+        <h2> Usuarios Creados </h2>
+    </div>
+
+    <div class="container">
+        <div class="card">    
+            <div class="cardTittle"> 
+                <p>ROL:</p>
+                <p> EMPLEADO</p>
+            </div>
+            <div class="cardContent">
+                <div>
+                    <form action="" class="formX">
+                        <label for="" class="firstLabel"> Nombre completo</label>
+                        <label for="" class="secondLabel">Juan Diego Millan</label>
+                    </form>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="" class="firstLabel"> Correo Electronico </label>
+                        <label for="" class="secondLabel"> JuanDi23@misena.edu.co </label> 
+                    </form>
+                </div>
+
+                <div class="buttons"> 
+                    <button class="buttonView"><img src="/RealViews/assets/ver.svg" alt=""></button>
+                    <button class="buttonEdit"><img src="/RealViews/assets/editar.svg" alt=""></button>
+                    <button class="buttonStatus"><img src="/RealViews/assets/estado.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+
+    <section class="modal modal-show">
+        <div class="oneform">
+            <h2 class="form_tittle">NUEVO REGISTRO DE USUARIO</h2>
+            <p class="modalClose">Salir</p>
+            <form class="form">
+                <h2 class="form_tittle2">Datos del usuario</h2>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="nameRegister" class="form_input" placeholder=" " >
+                            <label for="nameRegister" class="form_label">Nombres</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="lastnameRegister" class="form_input" placeholder=" ">
+                            <label for="lastname" class="form_label">Apellidos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor2">   
+                        <div class="form_group2">
+                            <input type="text" id="emailRegister" class="form_input" placeholder=" ">
+                            <label for="email" class="form_label">Correo electrónico</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="password" id="passwordRegister" class="form_input" placeholder=" " >
+                            <label for="password" class="form_label">Contraseña</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="number" id="phonenumberRegister" class="form_input" placeholder=" ">
+                            <label for="phonenumber" class="form_label">Teléfono</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="addressRegister" class="form_input" placeholder=" " >
+                            <label for="address" class="form_label">Dirección</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <div class="form_contenedor1">
+                                <p class="tittlerol">Rol</p>
+                                <input type="submit" class="selec" value="Seleccionar">
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirmRegister" onclick="return Validar()" value="Registrar">
+                <input type="submit" class="cancelRegister" value="Cancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modalView modalView-show"> 
+        <div class="window">
+            <div class="titleView">
+                <p>INFORMACIÓN DEL USUARIO</p>
+                <p class="modalViewClose"> X</p>
+            </div>
+    
+            <div class="windowContainer">
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel"> Nombres</label>
+                </div>
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for=""  class="firstLabel"> Apellidos</label>
+                </div>
+            </div>
+            
+            <div class="windowContainerLarge">
+                <div class="sectionsLarge">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel"> Correo Electronico</label>
+                </div>
+            </div>
+    
+            <div class="windowContainer">
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel"> Contraseña</label>
+                </div>
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel"> Cedula</label>             
+                </div>
+            </div>
+    
+            <div class="windowContainer">
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel">Telefono</label>
+                </div>
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel">Direccion</label>   
+                </div>
+            </div>
+    
+            <div class="windowContainer" >
+                <div class="sections">
+                    <input type="text" class="windowContainterInput">
+                    <label for="" class="firstLabel">Rol</label>
+                </div>
+                <div class="sections">
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modalEdit  modalEdit-show">
+        <div class="oneform">
+            <h2 class="form_tittle">EDITAR INFORMACIÓN</h2>
+            <p class="modalEditClose">salir</p>
+            <form class="form" >
+                <h2 class="form_tittle2">Datos del usuario</h2>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_input" placeholder=" " >
+                            <label for="name" class="form_label">Nombres</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="lastname" class="form_input" placeholder=" ">
+                            <label for="lastname" class="form_label">Apellidos</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor2">   
+                        <div class="form_group2">
+                            <input type="text" id="email" class="form_input" placeholder=" ">
+                            <label for="email" class="form_label">Correo electrónico</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="phonenumber" class="form_input" placeholder=" ">
+                            <label for="phonenumber" class="form_label">Teléfono</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="address" class="form_input" placeholder=" " >
+                            <label for="address" class="form_label">Dirección</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <div class="form_contenedor1">
+                                <p class="tittlerol">Rol</p>
+                                <input type="submit" class="selec" value="Seleccionar">
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirmEdit" value="Actualizar" onclick="return Validar()" >
+                <input type="submit" class="cancelEdit" value="Cancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modalAlert modalAlert-show">
+        <div class="Alert">
+            <div class="circule1Blue">
+                <img src="/RealViews/assets/circle.svg" alt="">
+            </div>
+               <p>¿Desea inhabilitar el item?</p>
+            <div>
+                <button class="confirmAlert">Aceptar</button>
+                <button class="cancelAlert">Cancelar</button>
+            </div>
+            <div class="downBlue">
+            </div>
+        </div>
+    </section>
+
+    <section class="AlertConfirm AlertConfirm-show">
+        <div class="Confirm">
+            <div class="circuleGreen">
+                <img src="/RealViews/assets/confirm.svg" alt="">
+            </div>
+               <p>¡Accion completada con exito!</p>
+            <div class="OkGreen">
+
+            </div>
+            <div class="downGreen"> 
+                <p class="closeGreen">OK</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="AlertCancel AlertCancel-show">
+        <div class="Cancel">
+            <div class="circuleRed">
+                <img src="/RealViews/assets/cancel.svg" alt="">
+            </div>
+               <p> Por favor vuelva a intentarlo</p>
+            <div class="downRed">
+                <p class="closeRed">OK</p>
+            </div>
+        </div>
+    </section>
+    <script src="/RealViews/js/usuarios.js"></script>
+    <script src="/RealViews/js/validaciones.js"></script>
+
+</body>
+</html>

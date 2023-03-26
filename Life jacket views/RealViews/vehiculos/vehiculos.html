@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/RealViews/vehiculos/vehiculos.css">
+    <title>Vehiculos</title>
+</head>
+<body>
+    <nav class="nav">
+        <h3 class="navTitle">Modulos</h3>
+        <ul class="list">
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/dashboard.svg" >
+                    <a href="/RealViews/Dashboard/dashboard.html" class="NavLink">Dashboard</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/users.svg">
+                    <a href="/RealViews/Usuarios/usuarios.html" class="NavLink">Usuarios</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/vehicles.svg">
+                    <a href="/RealViews/vehiculos/vehiculos.html" class="NavLink">Vehiculos</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="../assets/buys.svg">
+                    <a href="/RealViews/Compras/compras.html" class="NavLink">Compras</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/vendedores.svg">
+                    <a href="/RealViews/Vendedores/vendedores.html" class="NavLink">Vendedores</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/ventas.svg">
+                    <a href="/RealViews/Ventas/ventas.html" class="NavLink">Ventas</a>
+                </div>
+            </li>
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/compradores.svg">
+                    <a href="/RealViews/Compradores/compadores.html" class="NavLink">Compradores</a>
+                </div>
+            </li>
+
+
+            <li class="listItem">
+                <div class="listButton">
+                    <img src="/RealViews/assets/modifications.svg">
+                    <a href="/RealViews/Modificaciones/modificaciones.html" class="NavLink">Modificaciones</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div>
+            <img src="../assets/userLogin.svg" alt="">
+            <a href=""></a>
+        </div>
+
+        <div>
+            <img src="../assets/notification.svg" alt="">
+            <a href=""></a>
+        </div>
+    </nav>
+
+    <div class="headerContainer">
+        <div class="headerTittle">
+            <h1> Modulo - Vehiculos </h1>
+        </div>
+
+        <div class="headerDates">
+            <p> 12:45 a.m </p>
+            <p> Marzo, 03 de 2023 </p>
+        </div>
+
+        <span class="line"></span>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <div class="searchImg">
+                <a href="/assets/search.svg"></a>
+            </div>
+            <button class="buttonSearch"> Registrar vehiculo</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">    
+            <div class="cardTittle"> 
+                <p>Marca</p>
+                <p>Modelo</p>
+            </div>
+            <div class="imgContainer">
+                <img src="/img/vehiculo.jpg" alt="">
+            </div>
+            <div class="cardContent">
+                <div>
+                    <form action="" class="formX">
+                        <label for="" class="firstLabel"> Placa</label>
+                        <label for="" class="secondLabel"> MMM-999</label>
+                    </form>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="" class="firstLabel"> Tipo Vehiculo </label>
+                        <label for="" class="secondLabel"> Camioneta </label> 
+                    </form>
+
+                    <form action="">
+                        <label for="" class="firstLabel"> Motor </label>
+                        <label for="" class="secondLabel"> V8 </label> 
+                    </form>
+                </div>
+
+                <div class="buttons"> 
+                    <button class="buttonView"></button>
+                    <button class="buttonEdit"></button>
+                    <button class="button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="modal modal-show">
+        <div class="oneform">
+            <h2 class="form_tittle">NUEVO REGISTRO DE VEHÍCULO</h2>
+            <p class="modalClose">Salir</p>
+            <form class="form">
+                <h2 class="form_tittle2">Datos del vehículo</h2>
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="vehiculo" class="form_input" placeholder=" " >
+                            <label for="vehiculo" class="form_label">Vehículo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="marca" class="form_input" placeholder=" ">
+                            <label for="marca" class="form_label">Marca</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="modelo" class="form_input" placeholder=" " >
+                            <label for="modelo" class="form_label">Modelo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="capacidad" class="form_input" placeholder=" ">
+                            <label for="capacidad" class="form_label">Capacidad</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="tipo" class="form_input" placeholder=" " >
+                            <label for="tipo" class="form_label">Tipo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="color" class="form_input" placeholder=" ">
+                            <label for="color" class="form_label">Color</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="servicio" class="form_input" placeholder=" " >
+                            <label for="servicio" class="form_label">Servicio</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="linea" class="form_input" placeholder=" ">
+                            <label for="linea" class="form_label">Linea</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="motor" class="form_input" placeholder=" " >
+                            <label for="motor" class="form_label">Motor</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="chasis" class="form_input" placeholder=" ">
+                            <label for="chasis" class="form_label">Chasís</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="serie" class="form_input" placeholder=" " >
+                            <label for="serie" class="form_label">Serie</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="placa" class="form_input" placeholder=" ">
+                            <label for="placa" class="form_label">Placa</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="empresa" class="form_input" placeholder=" " >
+                            <label for="empresa" class="form_label">Empresa</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="matriculaanombrede" class="form_input" placeholder=" ">
+                            <label for="matriculaanombrede" class="form_label">Matricula a nombre de</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="numerodecedula" class="form_input" placeholder=" " >
+                            <label for="numerodecedula" class="form_label">Número de cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="kilometraje" class="form_input" placeholder=" ">
+                            <label for="kilometraje" class="form_label">Kilometraje</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="cilindraje" class="form_input" placeholder=" " >
+                            <label for="cilindraje" class="form_label">Cilindraje</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="combustible" class="form_input" placeholder=" ">
+                            <label for="combustible" class="form_label">Combustible</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="traccion" class="form_input" placeholder=" " >
+                            <label for="traccion" class="form_label">Tracción</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="soat" class="form_input" placeholder=" ">
+                            <label for="soat" class="form_label">Soat</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>  
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="tecnomecanica" class="form_input" placeholder=" " >
+                            <label for="tecnomecanica" class="form_label">Tecnomecánica</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="correadentada" class="form_input" placeholder=" ">
+                            <label for="correadentada" class="form_label">Correa dentada</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor2">   
+                        <div class="form_group">
+                            <p>Añadir imagen</p>
+                            <br>
+                            <input type="file" name="imagen" class="form_imagen"/>
+                        </div>
+                    </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Registrar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div>
+    </section>
+    <section class="modalView modalView-show">
+    <div class="viewCardContainer">
+        <div class="viewCardWindow">
+            <div class="viewCardTittle">
+                <h1>INFORMACIÓN DEL VECHÍCULO</h1>
+                <p class="modalViewClose">SAlir</p>
+            </div>
+
+            <div class="viewCardImg">
+                <img src="/img/vehiculo.jpg" alt="">
+                <img src="/img/vehiculo.jpg" alt="">
+                <img src="/img/vehiculo.jpg" alt="">
+                <img src="/img/vehiculo.jpg" alt="">
+                <img src="/img/vehiculo.jpg" alt="">
+            </div>
+            <span class="viewCarLine"></span>
+        <div class="viewCardInformation">    
+            <div class="leftRow">
+                <p>Vehiculo</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Capacidad</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Servicio</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Chasis</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Empresa</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Kilometraje</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Traccion</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Correa Dentada</p>
+                <p class="viewDatesCar"></p>
+            </div>
+
+            <div class="MiddleRow">
+                <p>Marca</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Tipo</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Linea</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Serie</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Matricula a nombre de</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Cilindraje</p>
+                <p class="viewDatesCar"></p>
+
+                <p>soat</p>
+                <p class="viewDatesCar"></p>
+
+            </div>
+
+            <div class="rightRow">
+                <p>Modelo</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Color</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Motor</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Placa</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Numero de cedula</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Combustible</p>
+                <p class="viewDatesCar"></p>
+
+                <p>Tecnomecanica</p>
+                <p class="viewDatesCar"></p>
+            </div>
+            </div>
+        </div>    
+    </div>
+    </section>
+    <section class="modalEdit modalEdit-show">
+        <div class="oneform">
+            <h2 class="form_tittle">EDITAR INFORMACIÓN</h2>
+            <p class="modalEditClose">SALIR</p>
+            <form class="form">
+                <h2 class="form_tittle2">Datos del vehículo</h2>
+                
+                    <div class="form_contenedor">
+                        <div class="form_group">
+                            <input type="text" id="vehiculo" class="form_input" placeholder=" " >
+                            <label for="vehiculo" class="form_label">Vehículo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="marca" class="form_input" placeholder=" ">
+                            <label for="marca" class="form_label">Marca</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="modelo" class="form_input" placeholder=" " >
+                            <label for="modelo" class="form_label">Modelo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="capacidad" class="form_input" placeholder=" ">
+                            <label for="capacidad" class="form_label">Capacidad</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="tipo" class="form_input" placeholder=" " >
+                            <label for="tipo" class="form_label">Tipo</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="color" class="form_input" placeholder=" ">
+                            <label for="color" class="form_label">Color</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="servicio" class="form_input" placeholder=" " >
+                            <label for="servicio" class="form_label">Servicio</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="linea" class="form_input" placeholder=" ">
+                            <label for="linea" class="form_label">Linea</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="motor" class="form_input" placeholder=" " >
+                            <label for="motor" class="form_label">Motor</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="chasis" class="form_input" placeholder=" ">
+                            <label for="chasis" class="form_label">Chasís</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="serie" class="form_input" placeholder=" " >
+                            <label for="serie" class="form_label">Serie</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="placa" class="form_input" placeholder=" ">
+                            <label for="placa" class="form_label">Placa</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="empresa" class="form_input" placeholder=" " >
+                            <label for="empresa" class="form_label">Empresa</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="matriculaanombrede" class="form_input" placeholder=" ">
+                            <label for="matriculaanombrede" class="form_label">Matricula a nombre de</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="number" id="numerodecedula" class="form_input" placeholder=" " >
+                            <label for="numerodecedula" class="form_label">Número de cédula</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="kilometraje" class="form_input" placeholder=" ">
+                            <label for="kilometraje" class="form_label">Kilometraje</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>    
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="cilindraje" class="form_input" placeholder=" " >
+                            <label for="cilindraje" class="form_label">Cilindraje</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="combustible" class="form_input" placeholder=" ">
+                            <label for="combustible" class="form_label">Combustible</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="traccion" class="form_input" placeholder=" " >
+                            <label for="traccion" class="form_label">Tracción</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="soat" class="form_input" placeholder=" ">
+                            <label for="soat" class="form_label">Soat</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>  
+                    <div class="form_contenedor">   
+                        <div class="form_group">
+                            <input type="text" id="tecnomecanica" class="form_input" placeholder=" " >
+                            <label for="tecnomecanica" class="form_label">Tecnomecánica</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="correadentada" class="form_input" placeholder=" ">
+                            <label for="correadentada" class="form_label">Correa dentada</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_contenedor2">   
+                        <div class="form_group">
+                            <p>Editar imagen</p>
+                            <br>
+                            <input type="file" name="imagen" class="form_imagen"/>
+                        </div>
+                    </div>
+            </form>
+            <div class="submitContainer">
+                <input type="submit" class="confirm" value="Actualizar">
+                <input type="submit" class="cancel" value="Cancelar">
+            </div>
+        </div>
+    </section>
+
+    <script src="/RealViews/js/Anothers.js"></script>
+</body>
+</html>
